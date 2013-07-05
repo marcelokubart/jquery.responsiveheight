@@ -11,6 +11,7 @@ using CSS sprites. This plugin calculates the height of an element relative to i
 Expression:
 	
 Coefficient Height = Height Layout / Width Layout
+
 Height = Current Width * Coefficient Height
 	
 Coefficinet Height is a HRELATION attribute of the element
