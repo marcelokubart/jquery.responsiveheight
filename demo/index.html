@@ -1,0 +1,55 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Jquery Responsive Height</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style type="text/css">
+	body{
+		background:#f1f1f1;
+		margin:0;
+		-moz-box-sizing:border-box;
+		-o-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	
+	#square{
+		background:#900;
+		-moz-box-sizing:border-box;
+		-o-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+		display:inline-block;
+		margin-right:10%;
+		width:45%;
+	}
+	
+	#rectangle{
+		background:#03F;
+		-moz-box-sizing:border-box;
+		-o-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+		display:inline-block;
+		vertical-align:top;
+		width:45%;
+	}
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.responsiveheight.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.responsive').responsiveheight();
+	});
+</script>
+</head>
+
+<body>
+	<div id="square" class="responsive" hrelation="1"></div><div id="rectangle" class="responsive" hrelation=".5"></div>
+</body>
+</html>
