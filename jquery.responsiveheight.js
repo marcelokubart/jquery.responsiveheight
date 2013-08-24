@@ -15,16 +15,16 @@
 	Contatct		:	kubartm@gmail.com
 	Develop Date	:	2013-07-02
 */
-(function($){
+;(function($){
 	$.fn.responsiveheight = function(){
-		this.each(function(){
-			var target = this;
-			var Hrelative = $(target).width() * $(target).attr('hrelation');
-			$(target).css({'height' : parseInt(Hrelative)});
-					
+		return this.each(function(){
+			var target = $(this);
+			var Hrelative = $(target).width() * target.data('hrelation');
+			target.css({'height' : parseInt(Hrelative)});
+
 			$(window).resize(function(){
-				Hrelativa = $(target).width() * $(target).attr('hrelation');
-				$(target).css({'height' : parseInt(Hrelativa)});
+				Hrelativa = target.width() * target.data('hrelation');
+				target.css({'height' : parseInt(Hrelativa)});
 			});
 		});
 	};
