@@ -21,7 +21,7 @@ Coefficinet Height is a HRELATION attribute of the element
 
 HTML
 <pre>
-  &lt;div id="div-eg" hrelation="0.56"&gt;&lt;/div&gt;
+  &lt;div id="div-eg" data-hrelation="0.56"&gt;&lt;/div&gt;
 </pre>
 
 JavaScript
